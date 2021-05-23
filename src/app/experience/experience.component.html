@@ -1,0 +1,29 @@
+<div class="triangle-top-left" [style.backgroundColor]="this.bgColor"></div>
+
+<div class="experience-container" id="experience-container" [style.backgroundColor]="this.bgColor" [style.color]="this.color" [style.borderColor]="this.color">
+    <div class="left">
+        <carousel [overflowCellsLimit]=1 [cellsToShow]=1 cellWidth="100%" [loop]=true [autoplay]=true [arrows]=false [pauseOnHover]=false [arrowsOutside]=false width=250 height=250 [images]="this.images">
+        </carousel>
+    </div>
+    <div class="right">
+        <div class="vertical">
+            <div class="title">Experience</div>
+        </div>
+        <div class="stack">
+            <div class="exp" *ngFor="let exp of this.companies">
+                <span class="name" [style.borderColor]="this.color">{{exp.name}}</span>
+                <div class="info">
+                    <div class="duration">{{exp.to == "" ? 'Since' : ''}} {{exp.from}} {{exp.to != "" ? ' - '+exp.to : ''}}</div>
+                    <div class="position">
+                        {{exp.position}}
+                    </div>
+                    <div class="description">
+                        {{exp.desc}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="triangle-bottom-right" [style.backgroundColor]="this.bgColor"></div>

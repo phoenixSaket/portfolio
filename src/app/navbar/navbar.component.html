@@ -1,0 +1,11 @@
+<div id="navbar" class="navbar" [style.backgroundColor]="this.backgroundColor" [style.color]="this.textColor">
+    <div class="brand" [style.color]="this.brandColor">
+        <img class="brand-img" [src]="this.brandImage">
+        <span class="brand">{{this.brand}}</span>
+    </div>
+    <div class="links" [style.color]="this.linkColor">
+        <div class="link-wrapper" *ngFor="let link of this.links; let i = index">
+            <a [href]="this.linksHref[i]" class="link" [style.backgroundColor]="this.linkBGColor" [style.color]="this.linkColor">{{link}}</a>
+        </div>
+    </div>
+</div>
