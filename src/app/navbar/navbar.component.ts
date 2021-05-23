@@ -62,19 +62,19 @@ export class NavbarComponent implements OnInit {
       this.linkColor = this.backup;
     }
 
-    if (scroll >= about.offsetHeight) {
+    if (scroll >= home.offsetHeight - triangle) {
       this.backgroundColor = '#F68375';
       this.textColor = this.backup;
       this.linkColor = this.backup;
     }
 
-    if (scroll >= projects.offsetHeight + (triangle* 1.5)) {
+    if (scroll >= about.offsetHeight + home.offsetHeight - (triangle * 2)) {
       this.backgroundColor = '#8F2D56';
       this.textColor = 'white';
       this.linkColor = 'white';
     }
 
-    if (scroll >= experience.offsetHeight + (triangle * 7)) {
+    if (scroll >= projects.offsetHeight + about.offsetHeight + home.offsetHeight - (triangle * 3)) {
       this.backgroundColor = document.getElementById(
         'experience-container'
       ).style.backgroundColor;
@@ -84,6 +84,12 @@ export class NavbarComponent implements OnInit {
       this.linkColor = document.getElementById(
         'experience-container'
       ).style.color;
+    }
+
+    if (scroll >= experience.offsetHeight + projects.offsetHeight + about.offsetHeight + home.offsetHeight - (triangle * 4)) {
+      this.backgroundColor = '#006B62';
+      this.textColor = 'white';
+      this.linkColor = 'white';
     }
 
     setTimeout(() => {

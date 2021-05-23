@@ -1,1 +1,52 @@
-<p>contact works!</p>
+<div class="triangle-top-right"></div>
+<div class="contact-container">
+    <div class="left">
+        <div class="upper">
+            <div class="title">
+                Contact Me
+            </div>
+        </div>
+        <div class="lower">
+            <div class="subtitle">
+                Don't be a stranger
+            </div>
+            <div class="inputs-container">
+                <app-input-text color="white" [value]="this.name" placeholder="Name" label="Name"
+                    labelBackground="#006B62" resetValue=false hasButton=false (insertedValue)="getValue($event, 1)">
+                </app-input-text>
+                <div class="error-container">
+                    <span class="invalid" *ngIf="this.nameError.length != 0">{{this.nameError}}</span>
+                </div>
+                <app-input-text color="white" [value]="this.email" placeholder="Email" label="Email"
+                    labelBackground="#006B62" resetValue=false hasButton=false (insertedValue)="getValue($event, 2)">
+                </app-input-text>
+                <div class="error-container">
+                    <span class="invalid" *ngIf="this.emailError.length != 0">{{this.emailError}}</span>
+                </div>
+                <app-input-text color="white" [value]="this.subject" placeholder="Subject" label="Subject"
+                    labelBackground="#006B62" resetValue=false hasButton=false (insertedValue)="getValue($event, 3)">
+                </app-input-text>
+                <div class="error-container">
+                    <span class="invalid" *ngIf="this.subjectError.length != 0">{{this.subjectError}}</span>
+                </div>
+                <app-input-text color="white" [value]="this.message" placeholder="Message" label="Message"
+                    labelBackground="#006B62" resetValue=false hasButton=false (insertedValue)="getValue($event, 4)">
+                </app-input-text>
+                <div class="error-container">
+                    <span class="invalid" *ngIf="this.messageError.length != 0">{{this.messageError}}</span>
+                </div>
+                <div class="btn-container">
+                    <button class="send-btn" (click)="sendMail()">{{this.service.isSendingMail ? 'Sending' : 'Send'}}</button>
+                    <span class="success" *ngIf="this.error.length == 0 && this.service.isSendingTried && this.service.isMailSent">Your message has been sent !</span>
+                    <span class="invalid" *ngIf="this.error.length == 0 && this.service.isSendingTried && !this.service.isMailSent">Your message has not been sent !</span>
+                    <span class="invalid" *ngIf="this.error.length != 0">{{this.error}}</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="assets/contact.gif" class="contact-gif" alt="contact" />
+    </div>
+</div>
+<div class="triangle-project"></div>

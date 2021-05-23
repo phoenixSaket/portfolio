@@ -1,31 +1,32 @@
 .projects-container {
     background-color: #8F2D56;
-    /* padding: 50px; */
     width: 100%;
     color: black;
     display: flex;
     justify-content: space-between;
     margin-top: -0.3px;
     border-radius: 0 2px 0 0;
+    flex-direction: column;
 }
 
 .website {
-    width: 900px;
-    height: 540px;
+    width: 80%;
+    height: 640px;
     border: none;
     outline: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
-    margin: 20px;
+    margin: 2% 10%;
 }
 
 .stack-website {
     width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     font-size: 1.2em;
-    /* text-transform: uppercase; */
     letter-spacing: 1px;
+    justify-content: space-between;
     padding-top: 15px;
     align-items: flex-end;
 }
@@ -35,7 +36,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin-top: -5px;
 }
 
@@ -56,9 +57,10 @@
 
 .project-subtitle {
     border-radius: 5px;
-    padding: 10px 20px 10px 120px;
+    padding: 10px 10px;
     color: white;
     text-decoration: none;
+    width: fit-content;
 }
 
 .project-title {

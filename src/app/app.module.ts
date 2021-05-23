@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ContactComponent } from './contact/contact.component';
+import { InputTextComponent } from './shared/input-text/input-text.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
     NavbarComponent,
     ExperienceComponent,
     ContactComponent,
+    InputTextComponent,
   ],
   imports: [
     BrowserModule,

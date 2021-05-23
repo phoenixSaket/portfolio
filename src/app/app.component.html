@@ -1,18 +1,72 @@
 <div class="main">
-    <app-navbar brand="" brandImage="" brandColor="#242449" backgroundColor="#00000012" textColor="#242449" [links]="this.links" [linksHref]="this.linksHref" linkColor="#242449" linkBGColor="#24244912" linkActiveColor="#ffffff"></app-navbar>
+    <app-navbar brand="" brandImage="" brandColor="#242449" backgroundColor="#00000012" textColor="#242449"
+        [links]="this.links" [linksHref]="this.linksHref" linkColor="#242449" linkBGColor="#24244912"
+        linkActiveColor="#ffffff"></app-navbar>
     <div class="page" id="home">
         <div class="home-page">
             <div class="left-home">
-                <div class="vertical">
+                <div class="vertical-head">
                     <span class="home-title">Saket Verma</span>
                 </div>
                 <div class="stack">
                     <span class="home-subtitle">Developer</span>
                     <span class="home-subtitle">Designer</span>
-                    <span class="home-subtitle">Gamer</span>
-                    <span class="home-subtitle">Thinker</span>
-                    <span class="home-subtitle">Dinosaur Hunter</span>
+                    <!-- <span class="home-subtitle">Gamer</span> -->
                 </div>
+                <div class="social-media">
+                    <a class="icons" href="https://www.facebook.com/iamsaket.verma" rel="noopener noreferrer"
+                        target="_blank">
+                        <span>
+                            <i class="fa fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a class="icons" href="https://www.instagram.com/saket.verma/" rel="noopener noreferrer"
+                        target="_blank">
+                        <span>
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a class="icons" href="https://www.reddit.com/user/phoenix_saket" rel="noopener noreferrer"
+                        target="_blank">
+                        <span>
+                            <i class="fa fa-reddit-alien"></i>
+                        </span>
+                    </a>
+                    <a class="icons" href="https://twitter.com/phoenix_saket" rel="noopener noreferrer" target="_blank">
+                        <span>
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a class="icons" href="https://github.com/phoenixSaket" rel="noopener noreferrer" target="_blank">
+                        <span>
+                            <i class="fa fa-github"></i>
+                        </span>
+                    </a>
+                    <a class="icons" href="https://www.linkedin.com/in/developer-saket-verma" rel="noopener noreferrer"
+                        target="_blank">
+                        <span>
+                            <i class="fa fa-linkedin"></i>
+                        </span>
+                    </a>
+                </div>
+                <!-- <div class="personalContact">
+                    <div class="personalPhone">
+                        <i class="fa fa-phone-square"></i>
+                        +91-8668692038
+                    </div>
+                    <div class="personalMail">
+                        <i class="fa fa-envelope"></i>
+                        develope.saket@gmail.com
+                    </div>
+                    <div class="personalMail">
+                        <i class="fa fa-envelope"></i>
+                        saket.verma@scrollright.com
+                    </div>
+                    <div class="personalMail">
+                        <i class="fa fa-envelope"></i>
+                        saket.verma@citiustech.com
+                    </div>
+                </div> -->
             </div>
             <div class="right-home">
                 <img class="home-image" src="assets/main.gif" alt="working-man" />
@@ -33,11 +87,16 @@
                 <div class="about-stack">
                     <div class="about-subtitle">
                         <div class="line"><span class="heavy">H</span>ello, Saket here !</div>
-                        <div class="line"><span class="heavy">I</span> am a web designer/developer focused on crafting great web experiences.</div>
-                        <div class="line"><span class="heavy">D</span>esigning and Coding have been my passion since the days I started working with computers.</div>
-                        <div class="line"><span class="heavy">I</span> enjoy creating beautifully designed, intuitive and functional websites, softwares, live wallpapers.</div>
+                        <div class="line"><span class="heavy">I</span> am a web designer/developer focused on crafting
+                            great web experiences.</div>
+                        <div class="line"><span class="heavy">D</span>esigning and Coding have been my passion since the
+                            days I started working with computers.</div>
+                        <div class="line"><span class="heavy">I</span> enjoy creating beautifully designed, intuitive
+                            and functional websites, softwares, live wallpapers.</div>
                         <div class="line">
-                            <span class="heavy">B</span>esides this, I also have passion for gaming and mobile photography.</div>
+                            <span class="heavy">B</span>esides this, I also have passion for gaming and mobile
+                            photography.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,7 +112,9 @@
                 </div>
                 <div class="stack-website">
                     <div class="project-subtitle" *ngFor="let project of this.websites">
-                        <a target="website" href="{{project.url}}" class="project-subtitle" [ngClass]="project.isSelected ? 'active' : ''" (click)="onClickProject(project)">{{project.name}}</a>
+                        <a target="website" href="{{project.url}}" class="project-subtitle"
+                            [ngClass]="project.isSelected ? 'active' : ''"
+                            (click)="onClickProject(project)">{{project.name}}</a>
                     </div>
                 </div>
             </div>
@@ -69,5 +130,5 @@
     <div class="page" id="contact">
         <app-contact></app-contact>
     </div>
-    
+
 </div>

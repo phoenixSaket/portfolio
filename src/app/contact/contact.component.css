@@ -1,0 +1,123 @@
+.triangle-top-right {
+    width: 100%;
+    height: 150px;
+    /* -webkit-clip-path: polygon(100% 0, 0 0, 10% 60%); */
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    background-color: #006B62;
+    margin-top: -135px;
+}
+
+.triangle-project {
+    width: 100%;
+    height: 150px;
+    /* -webkit-clip-path: polygon(100% 0, 0 0, 10% 60%); */
+    clip-path: polygon(110% 0, 0 0, 0% 100%);
+    background-color: #006B62;
+    margin-top: -10px;
+}
+
+.contact-container{
+    background-color: #006B62;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -0.5px;
+    color:white;
+    width: 100%;
+}
+
+.left{
+    width: 50%;
+}
+
+
+.title {
+    /* color: white; */
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 2px;
+    border-bottom: 0.5px solid white;
+}
+
+.subtitle {
+    /* color: white; */
+    text-transform: uppercase;
+    /* padding-top:10px; */
+    font-size: 1.5em;
+    line-height: 2.1em;
+    letter-spacing: 1px;
+}
+
+.contact-gif {
+    width: 400px;
+    height: 300px;
+}
+
+.lower{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: #03A679;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Cabin;
+}
+
+.error-container {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #FC5C65;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-right: 0;
+}
+
+.success {
+    margin-top: 5px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    color: #85e49c;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-right: 0;
+}
+
+.invalid {
+    margin-top: 5px;
+    color: #FC5C65;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
