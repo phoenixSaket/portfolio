@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ExperienceComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
