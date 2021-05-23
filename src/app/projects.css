@@ -50,9 +50,10 @@
 }
 
 .active {
-    background-color: #fafafa45;
-    border-radius: 5px;
+    /* background-color: #fafafa45; */
+    border-radius: 0px !important;
     padding: 10px 20px;
+    border-bottom: 0.5px solid white;
 }
 
 .project-subtitle {
