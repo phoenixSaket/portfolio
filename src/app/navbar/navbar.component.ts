@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
     this.textColor = this.textColor ? this.textColor : '';
     this.links = this.links ? this.links : [];
     this.linksHref = this.linksHref ? this.linksHref : [];
-    this.linkColor = this.linkColor ? this.linkColor : '';
+    this.linkColor = this.linkColor ? this.linkColor : 'black';
     this.linkBGColor = this.linkBGColor ? this.linkBGColor : '';
     this.linkActiveColor = this.linkActiveColor ? this.linkActiveColor : '';
     this.getScrollValue(this);

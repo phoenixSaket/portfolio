@@ -51,6 +51,7 @@
 .contact-gif {
     width: 400px;
     height: 300px;
+    max-width:100%;
 }
 
 .lower{
@@ -120,4 +121,14 @@
     color: #FC5C65;
     font-size: 15px;
     letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    .contact-container {
+        flex-direction: column-reverse !important;
+    }
+
+    .contact-container .left {
+        width: 100%;
+    }
 }

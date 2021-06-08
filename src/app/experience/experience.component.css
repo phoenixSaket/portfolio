@@ -44,8 +44,8 @@
 }
 
 .vertical {
-    padding-right: 5px;
-    padding-left: 5px;
+    /* padding-right: 5px;
+    padding-left: 5px; */
     padding-bottom: 15px;
     width: 100%;
     border-bottom: 0.5px solid;
@@ -89,3 +89,14 @@
 
 
 /* D0D38F */
+
+
+@media (max-width: 500px) {
+    .experience-container {
+        flex-direction: column !important;
+    }
+
+    .experience-container .right {
+        width: 100%;
+    }
+}

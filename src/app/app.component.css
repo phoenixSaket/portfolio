@@ -1,3 +1,7 @@
+* {
+    color: #3d3333;
+}
+
 .page {
     /* height: 100vh; */
     width: 100%;
@@ -42,11 +46,12 @@
     text-transform: uppercase;
     font-size: 4em;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .vertical {
-    padding-right: 5px;
-    padding-left: 5px;
+    /* padding-right: 5px;
+    padding-left: 5px; */
     padding-bottom: 15px;
     /* border-right: 0.5px solid white;
     border-left: 0.5px solid white; */
@@ -183,7 +188,7 @@
 
 .personalContact .fa{
     font-size: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     color: #000000;
     text-shadow: 2px 2px 5px gray;
     font-size: 25px;

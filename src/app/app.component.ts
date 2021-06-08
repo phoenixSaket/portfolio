@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css', './projects.css'],
+  styleUrls: ['./app.component.css', './projects.css', './responsive.css'],
 })
 export class AppComponent {
   title = 'portfolio';
@@ -61,6 +61,9 @@ export class AppComponent {
       position: 'Software Developer',
     },
   ];
+
+  dataCategory = ["Primary Services", "In-Network", "Out-Network"];
+  
 
   onClickProject(project) {
     let act = this.websites.indexOf(project);

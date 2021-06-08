@@ -1,0 +1,49 @@
+@media (max-width: 550px) {
+
+    /* Home */
+    
+    .home-page {
+        flex-direction: column-reverse !important;
+    }
+    
+    .left-home {
+        margin-left: 0px !important;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .vertical-head {
+        width: 100% !important;
+    }
+
+    .stack {
+        width: 100% !important;
+    }
+
+    #navbar, app-navbar {
+        display: none !important;
+    }
+
+    /* About */
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-text-container {
+        width: 100%
+    }
+
+    /* Experience */
+
+    .vertical {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
+}
