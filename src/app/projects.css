@@ -46,7 +46,7 @@
     /* -webkit-clip-path: polygon(100% 0, 0 0, 10% 60%); */
     clip-path: polygon(110% 0, 0 0, 0% 100%);
     background-color: #8F2D56;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .active {
@@ -71,6 +71,21 @@
     letter-spacing: 2px;
 }
 
+@media screen and (max-width: 550px) {
+    .stack-website {
+        width: 95%;
+    }
+
+    .right-home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .website {
+        margin: unset;
+        width: 95%; 
+    }
+}
 
 /* B2FFD6 */
 

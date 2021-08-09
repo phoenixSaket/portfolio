@@ -24,6 +24,7 @@
     margin-top: -0.5px;
     color:white;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .left{
@@ -61,6 +62,7 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
 
 .inputs-container {
     display: flex;
@@ -123,12 +125,25 @@
     letter-spacing: 1px;
 }
 
-@media (max-width: 500px) {
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .lower{
+        align-items: center;
+    }
+
     .contact-container {
         flex-direction: column-reverse !important;
     }
 
     .contact-container .left {
         width: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .inputs-container {
+        width: 80%;
     }
 }
